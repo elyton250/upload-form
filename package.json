@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "upload-form",
+  "description": "",
+  "version": "1.0.0",
+  "main": "db.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elyton250/upload-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elyton250/upload-form/issues"
+  },
+  "homepage": "https://github.com/elyton250/upload-form#readme"
+}
