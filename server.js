@@ -27,3 +27,5 @@ app.use('/api', postRoutes);
 app.listen(port, ip, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+export default app;
