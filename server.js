@@ -15,10 +15,10 @@ connectDB();
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
-// Use the logger middleware
 
+// for cross origin
 app.use(cors())
-
+// Use the logger middleware
 app.use(loggerMiddleware);
 
 // Use the post routes
@@ -28,4 +28,4 @@ app.listen(port, ip, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-export default app;
+// export default app;

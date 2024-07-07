@@ -5,7 +5,7 @@ const PostSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  date: {
+  datePosted: {
     type: Date,
     default: Date.now,
     required: true
@@ -19,10 +19,10 @@ const PostSchema = new mongoose.Schema({
     required: false
   },
 
-  // eventDate: {
-  //   type: String,
-  //   required: true
-  // },
+  eventDate: {
+    type: String,
+    required: true
+  },
 });
 
 module.exports = mongoose.model('Post', PostSchema);

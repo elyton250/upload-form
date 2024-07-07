@@ -4,7 +4,7 @@ const { createPost, getPosts, test } = require('../controller/createPost');
 
 router.post('/posts', createPost);
 
-router.get('/posts', getPosts);
+router.get('/get_posts', getPosts);
 
 router.get('/test', test);
 

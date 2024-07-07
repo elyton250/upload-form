@@ -6,18 +6,19 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const formDataObject = {
             title: form.elements['title'].value,
-            date: form.elements['date'].value,
+            eventDate: form.elements['date'].value,
             description: form.elements['description'].value
         };
-        
+        var formDataJson =  JSON.stringify(formDataObject);
         console.log('Form Data:', formDataObject);
+        console.log('Form Data as JSON:', formDataJson);
         
         fetch('http://127.0.0.1:3000/api/posts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(formDataObject),
+            body: formDataJson,
         })
         .then(response => response.json())
         .then(data => {

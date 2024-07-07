@@ -3,8 +3,9 @@ const Post = require('../models/postModel');
 // Create a new post
 const createPost = async (req, res) => {
   try {
-    const { title, description, picture } = req.body;
-    const newPost = new Post({ title, description, picture });
+    const { title, description, picture, eventDate } = req.body;
+    console.log('request body that reacehd the body', req.body);
+    const newPost = new Post({ title, description, picture, eventDate });
     await newPost.save();
     res.status(201).json({ message: 'Post created successfully', post: newPost });
   } catch (error) {
