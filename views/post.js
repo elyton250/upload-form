@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Form Data:', formDataObject);
         console.log('Form Data as JSON:', formDataJson);
         
-        fetch('http://127.0.0.1:3000/api/posts', {
+        fetch('https://upload-form-production.up.railway.app/api/posts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

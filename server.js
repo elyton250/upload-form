@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const app = express();
 const port = 3000;
-const ip = '0.0.0.0';
+const ip = '192.168.3.2';
 
 // Connect to MongoDB
 connectDB();
